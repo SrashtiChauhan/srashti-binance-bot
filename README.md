@@ -32,30 +32,27 @@ Both order types include:
 
 ---
 
-##  Architecture Design
+## 🧠 Project Structure
 
-srashti-binance-bot/
-├── src/
-│   ├── market_orders.py
-│   ├── limit_orders.py
-│   ├── config.py
-│   │
-│   ├── utils/
-│   │   ├── __init__.py
-│   │   ├── logger.py
-│   │   ├── validator.py
-│   │   └── client.py
-│   │
-│   └── advanced/
-│       ├── __init__.py
-│       ├── stop_limit.py
-│       ├── oco.py
-│       ├── twap.py
-│       └── grid_strategy.py
-│
-├── bot.log
-├── README.md
-└── report.pdf
+- **src/** → Core application logic  
+  - `market_orders.py` → Market order implementation  
+  - `limit_orders.py` → Limit order implementation  
+  - `config.py` → Global configuration (`TEST_MODE`)  
+
+- **utils/** → Shared reusable modules  
+  - `logger.py` → Structured logging configuration  
+  - `validator.py` → Input validation logic  
+  - `client.py` → Binance client setup  
+
+- **advanced/** → Advanced trading strategies (in progress)  
+  - `stop_limit.py`  
+  - `oco.py`  
+  - `twap.py`  
+  - `grid_strategy.py`  
+
+- `bot.log` → Execution logs  
+- `README.md` → Project documentation  
+- `report.pdf` → Assignment report  
 
 
 ### 🔹 Design Principles Used
