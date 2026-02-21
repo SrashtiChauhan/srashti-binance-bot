@@ -71,12 +71,12 @@ def place_stop_limit_order(symbol, side, quantity, stop_price, limit_price):
             raise NotImplementedError("Live API mode not enabled.")
 
         print(" Stop-Limit order processed!")
-        print(order)
+        return order
 
     except Exception as e:
         logger.error(f"Stop-Limit order failed: {str(e)}")
-        print(" Order failed:", str(e))
-
+        # print(" Order failed:", str(e))
+        return {"error": str(e)}
 
 if __name__ == "__main__":
     if len(sys.argv) != 6:

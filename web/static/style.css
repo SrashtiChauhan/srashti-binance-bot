@@ -1,0 +1,60 @@
+body {
+    font-family: Arial;
+    background-color: #0b0e11;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 40px;
+    color: #f0b90b;
+}
+
+form {
+    margin-top: 40px;
+}
+
+input, select {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 180px;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #f0b90b;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ffc107;
+}
+
+.dynamic-field {
+    display: none;
+}
+
+.result-card {
+    margin-top: 40px;
+    background-color: #1e2329;
+    padding: 25px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0 0 20px rgba(240,185,11,0.3);
+}
+
+.buy {
+    color: #00c087;
+    font-weight: bold;
+}
+
+.sell {
+    color: #f6465d;
+    font-weight: bold;
+}
