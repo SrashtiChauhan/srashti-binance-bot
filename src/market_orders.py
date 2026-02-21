@@ -117,13 +117,13 @@ import sys
 import uuid
 from datetime import datetime
 
-from utils.logger import logger
-from utils.validator import (
+from src.utils.logger import logger
+from src.utils.validator import (
     validate_symbol,
     validate_side,
     validate_quantity,
 )
-from config import TEST_MODE
+from src.config import TEST_MODE
 
 
 def simulate_market_order(symbol, side, quantity):
@@ -164,7 +164,8 @@ def place_market_order(symbol, side, quantity):
             raise NotImplementedError("Live API mode not enabled yet.")
 
         print("Market order executed successfully!")
-        print(order)
+        # print(order)
+        return order
 
     except Exception as e:
         logger.error(f"Market order failed: {str(e)}")

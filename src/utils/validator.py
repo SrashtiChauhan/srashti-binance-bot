@@ -1,5 +1,5 @@
 import re
-from utils.logger import logger
+from src.utils.logger import logger
 
 def validate_symbol(symbol: str):
     pattern = r"^[A-Z]{3,}USDT$"

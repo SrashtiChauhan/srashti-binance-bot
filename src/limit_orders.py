@@ -2,14 +2,14 @@ import sys
 import uuid
 from datetime import datetime
 
-from utils.logger import logger
-from utils.validator import (
+from src.utils.logger import logger
+from src.utils.validator import (
     validate_symbol,
     validate_side,
     validate_quantity,
     validate_price,
 )
-from config import TEST_MODE
+from src.config import TEST_MODE
 
 
 def simulate_limit_order(symbol, side, quantity, price):
@@ -46,11 +46,13 @@ def place_limit_order(symbol, side, quantity, price):
             raise NotImplementedError("Live API mode not enabled.")
 
         print(" Limit order placed successfully!")
-        print(order)
+        # print(order)
+        return
 
     except Exception as e:
         logger.error(f"Limit order failed: {str(e)}")
-        print(" Order failed:", str(e))
+        # print(" Order failed:", str(e))
+        return {"error": str(e)}
 
 
 if __name__ == "__main__":
