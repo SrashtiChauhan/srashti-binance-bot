@@ -283,6 +283,8 @@ Invalid inputs are rejected before execution.
 #  Author
 
 Srashti Chauhan
+---
 B.Tech CSE
+---
 Full Stack & AI Enthusiast
 
